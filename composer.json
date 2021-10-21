@@ -4,12 +4,7 @@
   "type": "symfony-bundle",
   "license": "MIT",
   "require": {
-    "php": "^7.4",
-    "symfony/validator": "5.3.*",
-    "sensio/framework-extra-bundle": "^6.1"
-  },
-  "require-dev": {
-    "roave/security-advisories": "dev-latest"
+    "php": "^7.4"
   },
   "autoload": {
     "psr-4": {
