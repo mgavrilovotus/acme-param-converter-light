@@ -3,7 +3,6 @@
 namespace ParamConverterBundle\ParamConverter;
 
 use ParamConverterBundle\Traits\SafeLoadFieldsTrait;
-use ParamConverterBundle\Validator\Constraint;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\ParamConverterInterface;
 use Symfony\Component\HttpFoundation\Request;
