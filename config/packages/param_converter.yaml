@@ -1,0 +1,4 @@
+services:
+  ParamConverterBundle\ParamConverter\Converter:
+    tags: [ 'request.param_converter' ]
+

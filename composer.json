@@ -1,0 +1,19 @@
+{
+  "name": "mgavrilovotus/acme-param-converter-light",
+  "description": "Main DTO param converter",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "require": {
+    "php": "^7.4",
+    "symfony/validator": "5.3.*",
+    "sensio/framework-extra-bundle": "^6.1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "ParamConverterBundle\\": ""
+    }
+  }
+}
