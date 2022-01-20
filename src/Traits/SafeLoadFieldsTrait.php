@@ -13,7 +13,13 @@ trait SafeLoadFieldsTrait
      */
     public function loadFromJsonString(string $json): void
     {
-        $this->loadFromArray(json_decode($json, true, 512, JSON_THROW_ON_ERROR));
+        if ($json) {
+            $array = json_decode($json, true, 512, JSON_THROW_ON_ERROR);
+        }
+
+        $fields = $array ?? $_POST;
+
+        $this->loadFromArray($fields);
     }
 
     public function loadFromJsonRequest(Request $request): void

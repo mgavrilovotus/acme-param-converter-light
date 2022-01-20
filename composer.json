@@ -1,5 +1,5 @@
 {
-  "name": "mgavrilovotus/acme-param-converter-light",
+  "name": "MGavrilov/param-converter-light",
   "description": "Main DTO param converter",
   "type": "symfony-bundle",
   "license": "MIT",

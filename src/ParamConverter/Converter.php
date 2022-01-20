@@ -43,12 +43,13 @@ class Converter extends Bundle implements ParamConverterInterface
         $options = (array)$configuration->getOptions();
         $resolver = new OptionsResolver();
         $resolver->setDefaults([
+            'asserts' => null,
             'groups' => null,
             'traverse' => false,
             'deep' => false,
         ]);
         $validatorOptions = $resolver->resolve($options['validator'] ?? []);
 
-        return $this->validator->validate($request, null, $validatorOptions['groups']);
+        return $this->validator->validate($request, null, $validatorOptions['asserts']);
     }
 }
